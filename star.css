@@ -1,7 +1,21 @@
-*{
-    margin: 0;
+.star-rating{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 4px;
 }
 
 .star-rating input{
     display: none;
 }
+
+.star-rating label{
+    font-size: 2rem;
+    color: gray;
+    transition: 0.2s ease-in-out;
+}
+
+.star-rating input:checked ~ label, .star-rating input:hover ~label{
+    color: yellow;
+}
+
