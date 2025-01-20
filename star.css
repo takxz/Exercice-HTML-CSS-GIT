@@ -12,7 +12,8 @@
 .star-rating label{
     font-size: 2rem;
     color: gray;
-    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
 }
 
 .star-rating input:checked ~ label, .star-rating input:hover ~label{
