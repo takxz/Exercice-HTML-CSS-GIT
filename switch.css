@@ -1,0 +1,38 @@
+.switch{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 60px;
+    height: 34px;
+    
+}
+
+.switch input{
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    background-color: #ccc;
+    transition: .4s;
+    position:relative;
+    width: 60px;
+    height: 34px;
+    display: block;
+}
+
+.slider:before{
+    position: absolute;
+    content:"";
+    height: 26px;
+    width: 26px;
+    top:4px;
+    left: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+.switch input:checked + .slider:before{
+    transform: translateX(26px);
+}
